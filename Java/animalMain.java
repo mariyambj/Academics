@@ -48,43 +48,76 @@ class Cat extends Animal{
 public class animalMain {
     public static void main(String[] arg) {
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter Dog Details:");
         System.out.print("Breed: ");
         String dogBreed = scanner.nextLine();
         System.out.print("Age: ");
         int dogAge = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         System.out.print("Color: ");
         String dogColor = scanner.nextLine();
         System.out.print("Weight: ");
         int dogWeight = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         System.out.print("Name: ");
         String dogName = scanner.nextLine();
         System.out.print("Owner: ");
         String dogOwner = scanner.nextLine();
-        Animal a = new Dog(dogBreed, dogAge, dogColor, dogWeight, dogName, dogOwner);
+
+        Animal a = new Dog(dogBreed, dogWeight, dogColor, dogAge, dogOwner, dogName);
         System.out.println("\nDog Details\n");
         a.display();
+
         System.out.println("\nEnter Cat Details:");
         System.out.print("Breed: ");
         String catBreed = scanner.nextLine();
         System.out.print("Age: ");
         int catAge = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         System.out.print("Color: ");
         String catColor = scanner.nextLine();
         System.out.print("Weight: ");
         int catWeight = scanner.nextInt();
-        scanner.nextLine(); 
+        scanner.nextLine();
         System.out.print("Name: ");
         String catName = scanner.nextLine();
-        System.out.print("Owner: ");
-        String catOwner = scanner.nextLine();
-        System.out.print("Lives left: ");
-        int catLives = scanner.nextInt();
-        a = new Cat(catBreed, catAge, catColor, catWeight, catName, catOwner, catLives);
+        System.out.print("Eye Color: ");
+        String catEyeColor = scanner.nextLine();
+        System.out.print("Tail Length: ");
+        int tailLength = scanner.nextInt();
+
+        a = new Cat(catBreed, catWeight, catColor, catAge, catName, catEyeColor, tailLength);
         System.out.println("\nCat Details\n");
         a.display();
+
+        scanner.close();
     }
 }
+/*Dog Details
+
+Species:Labor
+Color:Chocolate
+Weight:10Kg
+Age:10
+Name:Eerkili
+Owner:Mariyam
+
+Enter Cat Details:
+Breed: Persain-Cross
+Age: 3
+Color: White&Black
+Weight: 3
+Name: Prinku
+Eye Color: Green
+Tail Length: 30
+
+Cat Details
+
+Species:Persain-Cross
+Color:White&Black
+Weight:3Kg
+Age:3
+Name:Prinku
+Eyecolor:Green
+Tailength:30    cm*/
