@@ -101,4 +101,30 @@ public class personMain {
         scanner.close();
     }
 }
-
+/*Teacher Details:
+-----------------------------
+Teacher 1 Details:
+Name:Maya
+Gender:Female
+Address:Kollam
+Age:36
+Employee id:MCA1
+Company Name: TCS
+Qualification:MCA
+ Salary:60000.0
+Teacherid:12
+Subject:Mathematics
+Department:MCA
+-----------------------------
+Teacher 2 Details:
+Name:Ciliya
+Gender:Female
+Address:Kothamangalam
+Age:33
+Employee id:MCA2
+Company Name: Think Palm
+Qualification:MCA
+ Salary:70000.0
+Teacherid:13
+Subject:JAVA
+Department:MCA*/
